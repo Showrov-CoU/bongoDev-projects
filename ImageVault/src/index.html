@@ -18,13 +18,16 @@
     <title>My ImageVault</title>
   </head>
   <body class="font-font-oswald">
-    <nav class="bg-top-nav-color h-20 flex items-center gap-6 px-2">
-      <div class="w-48 px-2">
+    <!-- Top Nav Bar -->
+    <nav class="bg-top-nav-color min-[80px] flex items-center gap-6 px-3">
+      <div class="w-44">
         <a href="#"><img src="/ImageVault/images/logo.png" alt="" /></a>
       </div>
 
       <div class="flex flex-col justify-end pt-4">
-        <div class="bg-white inline-flex items-center w-[28rem] p-1 rounded hover:bg-gray-200 focus:ring focus:ring1 focus:ring-orange-50">
+        <div
+          class="bg-white inline-flex items-center w-[28rem] p-1 rounded hover:bg-gray-200 focus:ring focus:ring1 focus:ring-orange-50"
+        >
           <div class="flex grow">
             <span class="material-symbols-outlined align-middle pr-1">
               search </span
@@ -45,9 +48,11 @@
             </div>
           </div>
         </div>
-        <div class="text-white text-xs flex gap-3">
+        <div class="text-white text-[.68rem] flex gap-3">
           <div>
-            Size<span class="material-symbols-outlined align-middle"> arrow_right </span>
+            Size<span class="material-symbols-outlined align-middle">
+              arrow_right
+            </span>
           </div>
           <div>
             Orientation<span class="material-symbols-outlined align-middle">
@@ -55,23 +60,81 @@
             </span>
           </div>
           <div>
-            Metadat<span class="material-symbols-outlined align-middle"> arrow_right </span>
+            Metadata<span class="material-symbols-outlined align-middle">
+              arrow_right
+            </span>
           </div>
         </div>
       </div>
 
-      <div class="px-2 flex grow justify-end gap-3">
+      <div class="text-[15px] flex grow justify-end gap-3">
         <div class="text-white">
-          <span class="material-symbols-outlined align-middle pr-1">
+          <span class="material-symbols-outlined align-middle text-lg pr-1">
             settings </span
           >Advanced setting
         </div>
         <div class="text-white">
-          <span class="material-symbols-outlined align-middle pr-1">
+          <span class="material-symbols-outlined align-middle text-lg pr-1">
             account_circle </span
           >Showrov
         </div>
       </div>
     </nav>
+
+    <!-- second Top Bar -->
+    <div class="bg-sub-nav-color min-h-[30px] text-white text-xs px-3 flex items-center">
+      <div class="w-48">
+        <span class="material-symbols-outlined align-middle text-lg">
+          cloud_upload
+        </span>
+        Import files....
+      </div>
+      <div class="flex justify-between items-center grow">
+        <div class="flex pl-1 gap-6">
+          <div>
+            <span class="material-symbols-outlined align-middle text-lg"> publish </span
+            >Publish
+          </div>
+          <div>
+            <span class="material-symbols-outlined align-middle text-lg">
+              download </span
+            >Download
+          </div>
+          <div>
+            <span class="material-symbols-outlined align-middle text-lg"> lan </span
+            >Organize
+          </div>
+          <div>
+            <span class="material-symbols-outlined align-middle text-lg">
+              arrow_forward </span
+            >Move
+          </div>
+          <div>
+            <span class="material-symbols-outlined align-middle text-lg"> share </span
+            >Share
+          </div>
+          <div>
+            <span class="material-symbols-outlined align-middle text-lg">
+              more_horiz </span
+            >More
+          </div>
+        </div>
+        <div class="flex items-center gap-1">
+          <div>
+            <span class="material-symbols-outlined align-middle text-lg">
+              check_box_outline_blank
+            </span>
+          </div>
+          <div><span class="material-symbols-outlined align-middle text-lg"> view_cozy </span></div>
+          <div><span class="material-symbols-outlined align-middle text-lg"> apps </span></div>
+        </div>
+      </div>
+      <div class="w-56 text-end">
+        <span class="material-symbols-outlined align-middle text-lg"> close </span
+        >Delete
+      </div>
+    </div>
+
+    
   </body>
 </html>
