@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "font-oswald": ["Oswald", "sans-serif"],
+        "my-font": ["Oswald", "sans-serif"],
       },
       colors: {
         "top-nav-color": "#232228",

@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="style.css" />
     <title>My ImageVault</title>
   </head>
-  <body class="font-font-oswald">
+  <body class="font-my-font">
     <!-- Top Nav Bar -->
-    <nav class="bg-top-nav-color min-[80px] flex items-center gap-6 px-3">
-      <div class="w-44">
+    <nav class="bg-top-nav-color min-[80px] flex items-center gap-12 px-3">
+      <div class="w-32">
         <a href="#"><img src="/ImageVault/images/logo.png" alt="" /></a>
       </div>
-
+            <!-- Search Part -->
       <div class="flex flex-col justify-end pt-4">
         <div
           class="bg-white inline-flex items-center w-[28rem] p-1 rounded hover:bg-gray-200 focus:ring focus:ring1 focus:ring-orange-50"
@@ -50,91 +50,214 @@
         </div>
         <div class="text-white text-[.68rem] flex gap-3">
           <div>
-            Size<span class="material-symbols-outlined align-middle">
-              arrow_right
-            </span>
+            <a href="#">
+              Size<span class="material-symbols-outlined align-middle">
+                arrow_right
+              </span>
+            </a>
           </div>
           <div>
-            Orientation<span class="material-symbols-outlined align-middle">
-              arrow_right
-            </span>
+            <a href="#">
+              Orientation<span class="material-symbols-outlined align-middle">
+                arrow_right
+              </span>
+            </a>
           </div>
           <div>
-            Metadata<span class="material-symbols-outlined align-middle">
-              arrow_right
-            </span>
+            <a href="#">
+              Metadata<span class="material-symbols-outlined align-middle">
+                arrow_right
+              </span>
+            </a>
           </div>
         </div>
       </div>
-
+            <!-- Search Part end -->
       <div class="text-[15px] flex grow justify-end gap-3">
         <div class="text-white">
-          <span class="material-symbols-outlined align-middle text-lg pr-1">
-            settings </span
-          >Advanced setting
+          <a href="#">
+            <span class="material-symbols-outlined align-middle text-lg pr-1">
+              settings </span>Advanced setting
+          </a>
         </div>
         <div class="text-white">
-          <span class="material-symbols-outlined align-middle text-lg pr-1">
-            account_circle </span
-          >Showrov
+          <a href="#">
+            <span class="material-symbols-outlined align-middle text-lg pr-1">
+              account_circle </span>Showrov
+          </a>
         </div>
       </div>
     </nav>
+    <!-- Top Nav Bar end -->
 
     <!-- second Top Bar -->
-    <div class="bg-sub-nav-color min-h-[30px] text-white text-xs px-3 flex items-center">
-      <div class="w-48">
-        <span class="material-symbols-outlined align-middle text-lg">
-          cloud_upload
-        </span>
-        Import files....
+    <div
+      class="bg-sub-nav-color min-h-[30px] text-white text-xs px-3 flex items-center gap-5"
+    >
+      <div class="w-40">
+        <a href="#">
+          <span class="material-symbols-outlined align-middle text-lg px-2">
+            cloud_upload
+          </span>Import files....
+        </a>
       </div>
       <div class="flex justify-between items-center grow">
-        <div class="flex pl-1 gap-6">
+        <div class="flex gap-4">
           <div>
-            <span class="material-symbols-outlined align-middle text-lg"> publish </span
-            >Publish
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg px-1">
+                publish </span>Publish
+            </a>
           </div>
           <div>
-            <span class="material-symbols-outlined align-middle text-lg">
-              download </span
-            >Download
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg px-1">
+                download </span>Download
+            </a>
           </div>
           <div>
-            <span class="material-symbols-outlined align-middle text-lg"> lan </span
-            >Organize
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg px-1">
+                lan </span>Organize
+            </a>
           </div>
           <div>
-            <span class="material-symbols-outlined align-middle text-lg">
-              arrow_forward </span
-            >Move
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg px-1">
+                arrow_forward </span>Move
+            </a>
           </div>
           <div>
-            <span class="material-symbols-outlined align-middle text-lg"> share </span
-            >Share
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg px-1">
+                share </span>Share
+            </a>
           </div>
           <div>
-            <span class="material-symbols-outlined align-middle text-lg">
-              more_horiz </span
-            >More
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg px-1">
+                more_horiz </span>More
+            </a>
           </div>
         </div>
         <div class="flex items-center gap-1">
           <div>
-            <span class="material-symbols-outlined align-middle text-lg">
-              check_box_outline_blank
-            </span>
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg">
+                check_box_outline_blank
+              </span>
+            </a>
           </div>
-          <div><span class="material-symbols-outlined align-middle text-lg"> view_cozy </span></div>
-          <div><span class="material-symbols-outlined align-middle text-lg"> apps </span></div>
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg">
+                view_cozy
+              </span>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined align-middle text-lg">
+                apps
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="w-56 text-end">
-        <span class="material-symbols-outlined align-middle text-lg"> close </span
-        >Delete
+      <div class="w-52 text-end">
+        <a href="#">
+          <span class="material-symbols-outlined align-middle text-lg">
+            close </span>Delete
+        </a>
       </div>
     </div>
 
-    
+    <!-- left side bar -->
+    <div class="max-w-[190px] h-screen bg-sub-nav-color text-text-color">
+      <div class="ps-1 pt-3 bg-top-nav-color text-xs flex gap-2">
+        <a href="#"><div class="bg-sub-nav-color py-[6px] px-1">Category</div></a>
+        <a href="#"><div class="py-[6px]">Library</div></a>
+        <a href="#"><div class="py-[6px]">Agreements</div></a>
+      </div>
+      <div class="flex flex-col items-center justify-center text-xs mt-2">
+        <div>
+          <a href="#">
+            <span class="material-symbols-outlined align-middle text-lg px-2">
+            folder </span>Categories
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <span class="material-symbols-outlined align-middle text-lg px-2">
+              toggle_on </span>Extended Search
+          </a>
+        </div>
+        <div class="border-2 rounded-full relative overflow-hidden">
+          <span
+            class="pt-1 bg-gray-900 px-1 material-symbols-outlined align-middle text-lg absolute right-0"
+          >
+            search
+          </span>
+          <input
+            type="text"
+            class="h-8 bg-top-nav-color ps-3 overflow-hidden"
+            placeholder="Search category"
+          />
+        </div>
+      </div>
+      <div class="text-xs mt-3 ps-3 py-1">
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>EmailGraphics
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>Interest
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>LandingPage
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>People
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>Peyton
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>Staff
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>Trips
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>User
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>Video
+          </a>
+        </div>
+        <div>
+          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
+            check_box_outline_blank </span>Web
+          </a>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
