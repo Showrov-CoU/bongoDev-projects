@@ -14,16 +14,23 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>My ImageVault</title>
   </head>
   <body class="font-my-font">
     <!-- Top Nav Bar -->
-    <nav class="bg-top-nav-color min-[80px] flex items-center gap-12 px-3">
+    <nav
+      class="bg-top-nav-color min-w-[80px] flex items-center gap-12 px-3 sticky top-0 z-10"
+    >
       <div class="w-32">
-        <a href="#"><img src="/ImageVault/images/logo.png" alt="" /></a>
+        <a href="#" class="transition duration-200 hover:text-red-200"><img src="/ImageVault/images/logo.png" alt="" /></a>
       </div>
-            <!-- Search Part -->
+      <!-- Search Part -->
       <div class="flex flex-col justify-end pt-4">
         <div
           class="bg-white inline-flex items-center w-[28rem] p-1 rounded hover:bg-gray-200 focus:ring focus:ring1 focus:ring-orange-50"
@@ -50,21 +57,21 @@
         </div>
         <div class="text-white text-[.68rem] flex gap-3">
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               Size<span class="material-symbols-outlined align-middle">
                 arrow_right
               </span>
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               Orientation<span class="material-symbols-outlined align-middle">
                 arrow_right
               </span>
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               Metadata<span class="material-symbols-outlined align-middle">
                 arrow_right
               </span>
@@ -72,18 +79,20 @@
           </div>
         </div>
       </div>
-            <!-- Search Part end -->
-      <div class="text-[15px] flex grow justify-end gap-3">
+      <!-- Search Part end -->
+      <div class="text-sm flex grow justify-end gap-3">
         <div class="text-white">
-          <a href="#">
+          <a href="#" class="transition duration-200 hover:text-red-200">
             <span class="material-symbols-outlined align-middle text-lg pr-1">
-              settings </span>Advanced setting
+              settings </span
+            >Advanced setting
           </a>
         </div>
-        <div class="text-white">
+        <div class="text-red-200">
           <a href="#">
             <span class="material-symbols-outlined align-middle text-lg pr-1">
-              account_circle </span>Showrov
+              account_circle </span
+            >Showrov
           </a>
         </div>
       </div>
@@ -92,71 +101,77 @@
 
     <!-- second Top Bar -->
     <div
-      class="bg-sub-nav-color min-h-[30px] text-white text-xs px-3 flex items-center gap-5"
+      class="bg-sub-nav-color min-h-[30px] text-white text-xs px-3 flex items-center gap-5 sticky top-[73px] z-10"
     >
       <div class="w-40">
-        <a href="#">
+        <a href="#" class="transition duration-200 hover:text-red-200">
           <span class="material-symbols-outlined align-middle text-lg px-2">
-            cloud_upload
-          </span>Import files....
+            cloud_upload </span
+          >Import files....
         </a>
       </div>
       <div class="flex justify-between items-center grow">
         <div class="flex gap-4">
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg px-1">
-                publish </span>Publish
+                publish </span
+              >Publish
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg px-1">
-                download </span>Download
+                download </span
+              >Download
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg px-1">
-                lan </span>Organize
+                lan </span
+              >Organize
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg px-1">
-                arrow_forward </span>Move
+                arrow_forward </span
+              >Move
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg px-1">
-                share </span>Share
+                share </span
+              >Share
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg px-1">
-                more_horiz </span>More
+                more_horiz </span
+              >More
             </a>
           </div>
         </div>
         <div class="flex items-center gap-1">
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg">
                 check_box_outline_blank
               </span>
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg">
                 view_cozy
               </span>
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="#" class="transition duration-200 hover:text-red-200">
               <span class="material-symbols-outlined align-middle text-lg">
                 apps
               </span>
@@ -164,100 +179,194 @@
           </div>
         </div>
       </div>
-      <div class="w-52 text-end">
-        <a href="#">
+      <div class="w-48 text-end">
+        <a href="#" class="transition duration-200 hover:text-red-200">
           <span class="material-symbols-outlined align-middle text-lg">
-            close </span>Delete
+            close </span
+          >Delete
         </a>
       </div>
     </div>
+    <!-- second Top Bar end -->
 
-    <!-- left side bar -->
-    <div class="max-w-[190px] h-screen bg-sub-nav-color text-text-color">
-      <div class="ps-1 pt-3 bg-top-nav-color text-xs flex gap-2">
-        <a href="#"><div class="bg-sub-nav-color py-[6px] px-1">Category</div></a>
-        <a href="#"><div class="py-[6px]">Library</div></a>
-        <a href="#"><div class="py-[6px]">Agreements</div></a>
-      </div>
-      <div class="flex flex-col items-center justify-center text-xs mt-2">
-        <div>
-          <a href="#">
-            <span class="material-symbols-outlined align-middle text-lg px-2">
-            folder </span>Categories
-          </a>
-        </div>
-        <div>
-          <a href="#">
-            <span class="material-symbols-outlined align-middle text-lg px-2">
-              toggle_on </span>Extended Search
-          </a>
-        </div>
-        <div class="border-2 rounded-full relative overflow-hidden">
-          <span
-            class="pt-1 bg-gray-900 px-1 material-symbols-outlined align-middle text-lg absolute right-0"
+    <div class="flex">
+      <!-- left side bar -->
+      <div
+        class="max-w-[190px] basis-0 min-h-screen bg-sub-nav-color text-text-color"
+      >
+        <div class="px-2 pt-3 bg-top-nav-color text-xs flex gap-2">
+          <a href="#"
+            ><div class="bg-sub-nav-color py-[6px] px-1 text-red-200">Category</div></a
           >
-            search
-          </span>
-          <input
-            type="text"
-            class="h-8 bg-top-nav-color ps-3 overflow-hidden"
-            placeholder="Search category"
-          />
+          <a href="#"><div class="py-[6px] transition duration-200 hover:text-red-200">Library</div></a>
+          <a href="#"><div class="py-[6px] transition duration-200 hover:text-red-200">Agreements</div></a>
+        </div>
+        <div class="flex flex-col items-center justify-center text-xs mt-2">
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200">
+              <span class="material-symbols-outlined align-middle text-lg px-2">
+                folder </span
+              >Categories
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200">
+              <span class="material-symbols-outlined align-middle text-lg px-2">
+                toggle_on </span
+              >Extended Search
+            </a>
+          </div>
+          <div class="border-2 rounded-full relative overflow-hidden">
+            <span
+              class="pt-1 bg-gray-900 px-1 material-symbols-outlined align-middle text-lg absolute right-0"
+            >
+              search
+            </span>
+            <input
+              type="text"
+              class="h-8 bg-top-nav-color ps-3 overflow-hidden"
+              placeholder="Search category"
+            />
+          </div>
+        </div>
+        <div class="text-xs mt-3 ps-3 py-1 flex flex-col gap-1">
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >EmailGraphics
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >Interest
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >LandingPage
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >People
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >Peyton
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >Staff
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >Trips
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >User
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >Video
+            </a>
+          </div>
+          <div>
+            <a href="#" class="transition duration-200 hover:text-red-200"
+              ><span class="material-symbols-outlined align-middle text-sm">
+                check_box_outline_blank </span
+              >Web
+            </a>
+          </div>
         </div>
       </div>
-      <div class="text-xs mt-3 ps-3 py-1">
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>EmailGraphics
-          </a>
+
+      <!-- main body -->
+      <div class="bg-body-color grow">
+
+      </div>
+
+      <!-- right side bar -->
+      <div class="bg-sub-nav-color w-56 text-text-color">
+        <div class="px-2 pt-3 bg-top-nav-color text-xs flex gap-2">
+          <a href="#"
+            ><div
+              class="bg-sub-nav-color py-[6px] px-1  text-red-200"
+            >
+              Information
+            </div></a
+          >
+          <a href="#"><div class="py-[6px] transition duration-200 hover:text-red-200">Metadata</div></a>
         </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>Interest
-          </a>
+        <div class="p-2"><img src="/ImageVault/images/img1.jpg" alt="" /></div>
+        <div class="px-4 text-xs mt-2">
+          <p class="text-center text-sm font-bold">Natural-Image.jpg</p>
+          <table class="w-48">
+            <tbody>
+              <tr>
+                <td class="align-top text-right pr-2">Id</td>
+                <td class="align-top text-gray-500">1124</td>
+              </tr>
+              <tr>
+                <td class="align-top text-right pr-2">Vault</td>
+                <td class="align-top text-gray-500">EmailGraphics</td>
+              </tr>
+              <tr>
+                <td class="align-top text-right pr-2">Date Uploaded</td>
+                <td class="align-top text-gray-500">
+                  01/06/23 <br> 02:58:34
+                </td>
+              </tr>
+              <tr>
+                <td class="align-top text-right pr-2">Uploaded By</td>
+                <td class="align-top text-gray-500">Showrov</td>
+              </tr>
+              <tr>
+                <td class="align-top text-right pr-2">File Extension</td>
+                <td class="align-top text-gray-500">.JPG</td>
+              </tr>
+              <tr>
+                <td class="align-top text-right pr-2">File Size</td>
+                <td class="align-top text-gray-500">60.06 kb</td>
+              </tr>
+              <tr>
+                <td class="align-top text-right pr-2">width</td>
+                <td class="align-top text-gray-500">612 px</td>
+              </tr>
+              <tr>
+                <td class="align-top text-right pr-2">Height</td>
+                <td class="align-top text-gray-500">384 px</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>LandingPage
-          </a>
-        </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>People
-          </a>
-        </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>Peyton
-          </a>
-        </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>Staff
-          </a>
-        </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>Trips
-          </a>
-        </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>User
-          </a>
-        </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>Video
-          </a>
-        </div>
-        <div>
-          <a href="#"><span class="material-symbols-outlined align-middle text-sm">
-            check_box_outline_blank </span>Web
-          </a>
+        <div class="text-center mt-8">
+          <p>Published on</p>
+          <a href="#" class="text-sm transition duration-200 hover:text-red-200">view publishes<i class='bx bx-link-external'></i></a>
         </div>
       </div>
     </div>
-
   </body>
 </html>
