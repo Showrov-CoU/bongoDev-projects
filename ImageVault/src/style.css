@@ -722,6 +722,18 @@ video {
   top: 103px;
 }
 
+.top-\[3px\] {
+  top: 3px;
+}
+
+.top-\[5px\] {
+  top: 5px;
+}
+
+.top-\[3p\] {
+  top: 3p;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1225,6 +1237,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
