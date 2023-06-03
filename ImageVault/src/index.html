@@ -29,7 +29,7 @@
   <body class="font-my-font">
     <!-- Top Nav Bar -->
     <nav
-      class="bg-top-nav-color min-w-[80px] flex items-center gap-12 px-3 sticky top-0 z-10"
+      class="bg-top-nav-color min-h-[70px] flex items-center gap-12 px-3 sticky top-0 z-10"
     >
       <div class="w-32">
         <a href="#" class="transition duration-200 hover:text-red-200"
@@ -37,29 +37,20 @@
         /></a>
       </div>
       <!-- Search Part -->
-      <div class="flex flex-col justify-end pt-4">
-        <div
-          class="bg-white inline-flex items-center w-[28rem] p-1 rounded hover:bg-gray-200 focus:ring focus:ring1 focus:ring-orange-50"
-        >
-          <div class="flex grow">
-            <span class="material-symbols-outlined align-middle pr-1">
-              search </span
-            >Search files.....
-          </div>
-          <div class="flex justify-center items-center gap-2">
-            <div>
-              <span class="material-symbols-outlined align-middle">
-                close
-              </span>
-            </div>
-            <div class="h-5 w-[1px] bg-black opacity-40"></div>
-            <div>45101 File(s)</div>
-            <div>
-              <span class="material-symbols-outlined align-middle">
-                expand_more
-              </span>
-            </div>
-          </div>
+      <div class="flex-col pt-4">
+        <div class="relative w-[500px] bg-white rounded overflow-hidden">
+          <span class="pl-2 material-symbols-outlined absolute top-1 left-0 ">
+            search
+          </span>
+          <input type="text" class="w-[350px] h-8 pl-10" placeholder="Search files....">
+          <span class="material-symbols-outlined absolute top-1">
+            close
+          </span>
+          <div class="inline-block h-[22px] w-[1px] bg-black absolute top-1 right-[118px] opacity-20"></div>
+          <span class="pl-8">457 files(s)</span>
+          <span class="material-symbols-outlined align-middle absolute top-1 right-0">
+            expand_more
+          </span>
         </div>
         <div class="text-white text-[.68rem] flex gap-3">
           <div>
@@ -107,7 +98,7 @@
 
     <!-- second Top Bar -->
     <div
-      class="bg-sub-nav-color min-h-[30px] text-white text-xs px-3 flex items-center gap-5 sticky top-[73px] z-10"
+      class="bg-sub-nav-color min-h-[30px] text-white text-xs px-3 flex items-center gap-5 sticky top-[72px] z-10"
     >
       <div class="w-40">
         <a href="#" class="transition duration-200 hover:text-red-200">
@@ -195,9 +186,9 @@
     </div>
     <!-- second Top Bar end -->
 
-    <div class="h-screen flex">
+    <div class="max-h-screen md:flex ">
       <!-- left side bar -->
-      <div class="basis-[190px] bg-sub-nav-color text-text-color">
+      <div class="basis-[190px] bg-sub-nav-color text-text-color ">
         <div class="px-2 pt-3 bg-top-nav-color text-xs flex gap-2">
           <a href="#"
             ><div class="bg-sub-nav-color py-[6px] px-1 text-red-200">
@@ -243,31 +234,31 @@
             />
           </div>
         </div>
-        <div class="text-xs mt-3 ps-3 py-1 flex flex-col gap-1">
+        <div class="text-xs mt-3  py-1 md:flex-col flex flex-wrap gap-4 md:gap-2">
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
-              ><span class="material-symbols-outlined align-middle text-sm">
+              ><span class="material-symbols-outlined align-middle text-sm pl-4 pr-1">
                 check_box_outline_blank </span
               >EmailGraphics
             </a>
           </div>
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
-              ><span class="material-symbols-outlined align-middle text-sm">
+              ><span class="material-symbols-outlined align-middle text-sm pl-4 pr-1">
                 check_box_outline_blank </span
               >Interest
             </a>
           </div>
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
-              ><span class="material-symbols-outlined align-middle text-sm">
+              ><span class="material-symbols-outlined align-middle text-sm pl-4 pr-1">
                 check_box_outline_blank </span
               >LandingPage
             </a>
           </div>
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
-              ><span class="material-symbols-outlined align-middle text-sm">
+              ><span class="material-symbols-outlined align-middle text-sm pl-4 pr-1">
                 check_box_outline_blank </span
               >People
             </a>
@@ -275,13 +266,16 @@
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
               ><span class="material-symbols-outlined align-middle text-sm">
+                arrow_right
+                </span>
+              <span class="material-symbols-outlined align-middle text-sm pr-1">
                 check_box_outline_blank </span
               >Peyton
             </a>
           </div>
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
-              ><span class="material-symbols-outlined align-middle text-sm">
+              ><span class="material-symbols-outlined align-middle text-sm pl-4 pr-1">
                 check_box_outline_blank </span
               >Staff
             </a>
@@ -289,20 +283,23 @@
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
               ><span class="material-symbols-outlined align-middle text-sm">
+                arrow_right
+                </span>
+                <span class="material-symbols-outlined align-middle text-sm pr-1">
                 check_box_outline_blank </span
               >Trips
             </a>
           </div>
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
-              ><span class="material-symbols-outlined align-middle text-sm">
+              ><span class="material-symbols-outlined align-middle text-sm pl-4 pr-1">
                 check_box_outline_blank </span
               >User
             </a>
           </div>
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
-              ><span class="material-symbols-outlined align-middle text-sm">
+              ><span class="material-symbols-outlined align-middle text-sm pl-4 pr-1">
                 check_box_outline_blank </span
               >Video
             </a>
@@ -310,6 +307,9 @@
           <div>
             <a href="#" class="transition duration-200 hover:text-red-200"
               ><span class="material-symbols-outlined align-middle text-sm">
+                arrow_right
+              </span>
+              <span class="material-symbols-outlined align-middle text-sm pr-1">
                 check_box_outline_blank </span
               >Web
             </a>
@@ -318,7 +318,7 @@
       </div>
 
       <!-- main body -->
-      <div class="w-full bg-body-color overflow-y-scroll p-2">
+      <div class="grow bg-body-color overflow-y-scroll p-2">
         <div class="w-full flex gap-2">
           <div class="flex flex-col gap-2">
             <div class="rounded-lg overflow-hidden">
@@ -384,13 +384,13 @@
               <img src="/ImageVault/images/img8.jpg" alt="" />
             </div>
             <div class="rounded-lg overflow-hidden">
-              <img src="/ImageVault/images/img5.jpg" alt="" />
+              <img src="/ImageVault/images/img1.jpg" alt="" />
             </div>
             <div class="rounded-lg overflow-hidden">
               <img src="/ImageVault/images/img10.jpg" alt="" />
             </div>
             <div class="rounded-lg overflow-hidden">
-              <img src="/ImageVault/images/img1.jpg" alt="" />
+              <img src="/ImageVault/images/img5.jpg" alt="" />
             </div>
           </div>
           <div class="flex flex-col gap-2">
@@ -443,7 +443,7 @@
       </div>
 
       <!-- right side bar -->
-      <div class="bg-sub-nav-color basis-56 text-text-color">
+      <div class="bg-sub-nav-color basis-56 text-text-color ">
         <div class="px-2 pt-3 bg-top-nav-color text-xs flex gap-2">
           <a href="#"
             ><div class="bg-sub-nav-color py-[6px] px-1 text-red-200">
@@ -456,11 +456,11 @@
             </div></a
           >
         </div>
-        <div class="p-2"><img src="/ImageVault/images/img1.jpg" alt="" /></div>
+        <div class="md:p-2 p-5"><img src="/ImageVault/images/img6.jpg" alt="" /></div>
         <div class="px-4 text-xs mt-2">
           <p class="text-center text-sm font-bold">Natural-Image.jpg</p>
-          <table class="w-48">
-            <tbody>
+          <table class="w-48 ml-auto mr-auto">
+            <tbody >
               <tr>
                 <td class="align-top text-right pr-2">Id</td>
                 <td class="align-top text-gray-500">1124</td>
